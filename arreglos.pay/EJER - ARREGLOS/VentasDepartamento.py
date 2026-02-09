@@ -1,17 +1,16 @@
-# Arreglo bidimensional: ventas mensuales por departamento
 ventas = [
-    [120, 95, 80],   # Enero
-    [110, 90, 75],   # Febrero
-    [130, 100, 85],  # Marzo
-    [140, 110, 90],  # Abril
-    [150, 120, 100], # Mayo
-    [160, 130, 110], # Junio
-    [170, 140, 120], # Julio
-    [165, 135, 115], # Agosto
-    [155, 125, 105], # Septiembre
-    [180, 150, 130], # Octubre
-    [190, 160, 140], # Noviembre
-    [200, 170, 160]  # Diciembre
+    [120, 95, 80],   
+    [110, 90, 75],   
+    [130, 100, 85],  
+    [140, 110, 90],  
+    [150, 120, 100], 
+    [160, 130, 110], 
+    [170, 140, 120], 
+    [165, 135, 115], 
+    [155, 125, 105], 
+    [180, 150, 130],  
+    [190, 160, 140], 
+    [200, 170, 160]  
 ]
 
 meses = [
@@ -21,7 +20,6 @@ meses = [
 
 departamentos = ["Ropa", "Deportes", "Juguetería"]
 
-# ================= MÉTODOS =================
 
 def insertar_venta(matriz):
     fila = int(input("Mes (1-12): ")) - 1
@@ -56,7 +54,6 @@ def mostrar_tabla(matriz):
             print(f"{valor:>12}", end="")
         print()
 
-# ================= MENÚ =================
 
 while True:
     print("\n--- MENÚ DE OPCIONES ---")
