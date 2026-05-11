@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: external_sorting
+Version: 0.1.0
+Summary: Professional external sorting library
+Home-page: https://github.com/yourusername/external_sorting
+Author: Your Name
+Author-email: Your Name <you@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/external_sorting
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.9.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: openpyxl>=3.1.0
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: tqdm>=4.66.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# External Sorting Library
+
+A professional Python library for sorting large datasets using external memory algorithms.  
+Implements three classical algorithms:
+
+- **Recursive Merge Sort** (Intercalación) – O(n log n), recursive, stable.
+- **Direct Merge Sort** (Bottom‑Up) – iterative, no recursion, stable.
+- **Balanced K‑Way Merge Sort** – external sorting for files larger than RAM, uses disk runs and heap merging.
+
+## Features
+
+- ✅ Sort numbers, strings, or custom objects with `key` functions.
+- ✅ Ascending / descending order.
+- ✅ Work with in‑memory lists OR large files (TXT, CSV, JSON, Excel).
+- ✅ Configurable chunk size and number of ways (`k`) for balanced merge.
+- ✅ Optional multiprocessing for parallel run creation.
+- ✅ Detailed statistics: time, memory, comparisons, merges.
+- ✅ Progress bars with `rich`.
+- ✅ CLI tool `extsort` with Typer.
+- ✅ Benchmark suite to compare algorithms.
+- ✅ Fully typed, documented, and tested.
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/external_sorting.git
+cd external_sorting
+pip install -e .

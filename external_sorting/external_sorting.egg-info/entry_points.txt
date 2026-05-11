@@ -1,0 +1,2 @@
+[console_scripts]
+extsort = external_sorting.cli:app
